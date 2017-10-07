@@ -43,7 +43,7 @@ function numtoalpha(num){
 
 	if(num>99 && num<1000){
 		var numberArray = (""+num).split("");
-		console.log(numberArray);
+		//console.log(numberArray);
 		for(var a = 1;a<=10;a++){
 			if(numberArray[0] == a){
 				var first = numten[a];
@@ -71,6 +71,9 @@ function numtoalpha(num){
 				}	
 			}
 		}
+	}
+	if(num == 1000){
+		console.log('one thousand');
 	}
 };
 
